@@ -8,15 +8,16 @@
 <link rel="stylesheet" href="assets/css/google-roboto.css" />
 <link rel="stylesheet" href="assets/css/ngDialog.css" />
 <link rel="stylesheet" href="assets/css/ngDialog-theme-default.css" />
-<link rel="stylesheet" href="assets/css/style.css" />
 <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="assets/css/font-awesome.css">
 </head>
 <body>
 
 	<div class="container-fluid" data-ng-app="cPortal">
 		<div data-ng-include="'templates/header.html'"></div>
 		<div class="container">
-			<div class="col-md-10"><ng-view> </ng-view></div>
+			<div class="col-md-12"><main ng-view> </main></div>
 		</div>
 		<div data-ng-include="'templates/footer.html'"></div>
 	</div>
@@ -28,10 +29,20 @@
 	<script src="assets/js/libs/ngDialog.js"></script>
     <script src="assets/js/libs/ng-file-upload.min.js"></script>
     <script src="assets/js/libs/ng-file-upload-shim.min.js"></script>
+    <script src="assets/js/libs/angular-animate.js"></script>
+ 	<script src="assets/js/libs/angular-cookies.js"></script>
+	<script src="assets/js/libs/angular-jwt.min.js"></script>
+	<script src="assets/js/libs/angular-storage.js"></script>
+	<script src="assets/js/libs/auth0-6.7.js"></script>
+	<script src="assets/js/libs/auth0-angular-4.js"></script>
 	<script src="assets/js/angular/application/application.js"></script>
 	<script src="assets/js/angular/controllers/mainController.js"></script>
+	<script src="assets/js/angular/directives/cPortalCarouselDirective.js"></script>
 	<script src="assets/js/angular/controllers/cPortalHomeController.js"></script>
 	<script src="assets/js/angular/controllers/cPortalProfileController.js"></script>
+	<script src="assets/js/angular/controllers/cPortalLoginController.js"></script>
+	<script src="assets/js/angular/controllers/cPortalLogoutController.js"></script> 
+	<script src="assets/js/angular/controllers/cPortalHeaderController.js"></script> 
 	<script src="assets/js/angular/services/services.js"></script>
 	<script src="assets/js/angular/constants/constants.js"></script>
 </body>

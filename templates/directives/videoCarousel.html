@@ -1,0 +1,48 @@
+<div id="carousel-example-videos" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li ng-repeat="link in links" data-target="#carousel-example-generic" data-slide-to="{{$index}}"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item" ng-repeat="link in links">
+      
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail carousel-thumb">
+              <iframe width="250" height="151" src="https://www.youtube.com/embed/BNeXlJW70KQ" frameborder="0" allowfullscreen></iframe>
+                <div class="caption">
+                    <p>heelooo</p>  
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail carousel-thumb">
+              <iframe width="250" height="151" src="https://www.youtube.com/embed/hu0Otg8XXV8" frameborder="0" allowfullscreen></iframe>
+                <div class="caption">
+                    <p>dfdsfsfsdfdsf</p>  
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail carousel-thumb">
+              <iframe width="250" height="151" src="https://www.youtube.com/embed/6MBaFL7sCb8" frameborder="0" allowfullscreen></iframe>
+                <div class="caption">
+                    <p>dsfsdha</p>  
+                </div>
+            </div>
+        </div>
+
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" data-target="#carousel-example-videos" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" data-target="#carousel-example-videos" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>

@@ -1,0 +1,262 @@
+body {
+	font: 14px "Roboto", Helvetica, Arial, sans-serif!important;
+	padding-top: 50px !important;
+	background-image: url('../images/backgrounds/1.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight: 100;
+}
+
+a {
+
+}
+
+img {
+
+}
+
+ul {
+
+}
+
+ul > li {
+
+}
+
+label {
+	font-weight: 300;
+	font-size: 17px;
+}
+
+p {
+
+}
+
+a.nav-btn {
+	background-color: #C00000;
+    color: #fff;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    min-width: 100px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: 400;
+}
+
+a.nav-btn:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+a.nav-btn-next {
+	float:right;
+}
+
+/**
+*  Custom Generic Styles
+*/
+
+.nav-info-bar {
+	text-align: center;
+}
+
+.data-info-cards {
+	/*height: 500px;*/
+	overflow: hidden;
+}
+
+
+.heading {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.heading > h3 {
+	line-height: 35px;
+}
+
+.heading > h3 > .fa-caret-left {
+	float: left;
+	color: #C00000;
+	font-size: 48px;
+	padding-left: 20px;
+}
+
+.heading > h3 > .fa-caret-right {
+	float: right;
+	color: #C00000;
+	font-size: 48px;
+	padding-right: 20px;
+}
+
+.heading > h3 > .fa:hover {
+	cursor: pointer;
+}
+
+.progress-line {
+	overflow: hidden;
+	margin-bottom: 30px;
+	margin-top: 25px;
+}
+
+.nav-btn-wrappers {
+	margin-top: 20px;
+}
+
+
+.custom-margin-bottom-10 {
+	margin-bottom: 10px;
+}
+
+.nav-tabs > li > a {
+	color: #C00000;
+}
+
+.nav-tabs > li > a:hover {
+	cursor: pointer;
+	background-color: none;
+}
+
+
+
+img-crop {
+	width:100%;
+	height:100%;
+	display:block;
+	position:relative;
+	overflow:hidden
+}
+
+img-crop canvas { 
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	outline:0;
+	-webkit-tap-highlight-color:transparent
+}
+
+/** Create Profile Styles **/
+
+main {
+	overflow: hidden;
+}
+
+main.ng-enter {
+	transition: 0.5s linear all;
+	opacity:0;
+}
+
+main.ng-enter.ng-enter-active {
+	opacity: 1;
+}
+
+.data-info-cards {
+	background-color: rgba(256,256,256,0.9);
+}
+
+.data-info-cards.ng-hide-add {  
+	transition: 0s linear all;
+	opacity: 0;
+}
+
+.data-info-cards.ng-hide-add.ng-hide-add-active {
+	opacity: 0;
+ }
+
+.data-info-cards.ng-hide-remove {  
+	transition: 1s linear all;
+	opacity: 0;
+}
+
+.data-info-cards.ng-hide-remove.ng-hide-remove-active {  
+	opacity: 1;
+}
+
+.progress-line > div {
+	height: 2px;
+	background: #C00000;
+}
+
+.data-info-cards.actual-card {
+ 	box-shadow : 0 1px 6px -1px;
+}
+.data-info-cards.actual-card > .heading {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.data-info-cards.actual-card > .heading > h3 {
+	padding-top: 10px;
+	margin-bottom: 7px;
+}
+
+
+.thumbnail-wrapper > .thumbnail {
+	border-radius: 13px;
+	margin-bottom: 5px;
+}
+
+.thumbnail-wrapper > .thumbnail > img {
+	padding-top: 7px;
+	padding-bottom: 7px;
+	border-radius: 13px;
+
+}
+
+.thumbnail-wrapper > p {
+	font-size: 13px;
+	text-align: center;
+	color: #666;
+}
+
+
+
+.upload-media-wrapper > h3 {
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+
+
+
+
+/** Courosal styles **/
+
+.carousel-control {
+	width: 5%;
+}
+
+.carousel-control.left,.carousel-control.right {
+	background-image: none;
+	background-color: none;
+}
+
+.caption > p {
+	text-align: center;
+}
+
+.glyphicon.glyphicon-chevron-right {
+	margin-right: -30px!important;
+	color: #C00000;
+	opacity: 1;
+}
+
+.glyphicon.glyphicon-chevron-left {
+	margin-left: -30px!important;
+	color: #C00000;
+	opacity: 1!important;
+}
+
+.carousel-thumb {
+	border:none!important;	
+}
+

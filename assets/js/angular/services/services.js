@@ -1,14 +1,8 @@
 angular.module('cPortal.services', []).
-  factory('serviceApi', function($http) {
+  factory('serviceApi', function($http,$rootScope,authManager) {
 	 var serviceResponse = {};
-	
-	 serviceResponse.loginFormPost = function(loginForm) {
-		//return $http.post('/api/authenticate',loginForm);
-	};
 	 
-	 serviceResponse.registerFormPost = function(registerForm){
-		 //return $http.post('/setup',registerForm);
-	 };
-	 	 
+	
 	 return serviceResponse;
+	 
 });
