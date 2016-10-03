@@ -126,24 +126,6 @@ a.nav-btn-next {
 }
 
 
-
-img-crop {
-	width:100%;
-	height:100%;
-	display:block;
-	position:relative;
-	overflow:hidden
-}
-
-img-crop canvas { 
-	display:block;
-	position:absolute;
-	top:50%;
-	left:50%;
-	outline:0;
-	-webkit-tap-highlight-color:transparent
-}
-
 /** Create Profile Styles **/
 
 main {
@@ -260,3 +242,37 @@ main.ng-enter.ng-enter-active {
 	border:none!important;	
 }
 
+/** profile image crop  styles **/
+
+.cportal-profile-image-raw-preview > h3  {
+	text-align: center;
+	width: 350px;
+}
+
+.cportal-profile-image-crop-area {
+	width: 350px;
+	height: 350px;
+	background-color: #e0e0e0;
+	border:4px dashed #ccc;
+}
+
+img-crop {
+	width:100%;
+	height:100%;
+	display:block;
+	position:relative;
+	overflow:hidden
+}
+
+img-crop canvas { 
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	outline:0;
+	-webkit-tap-highlight-color:transparent
+}
+
+#cportal-profile-image-crop-next {
+	margin : 20px auto;
+}

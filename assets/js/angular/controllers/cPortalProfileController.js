@@ -29,5 +29,22 @@ angular.module("cPortal.controllers")
      { src:"http://www.sleepzone.ie/uploads/images/PanelImages800x400/TheBurren/General/sleepzone_hostels_burren_800x400_14.jpg", alt:"", caption:""},
   ];  
 
+
+        $scope.myImage='';
+        $scope.myCroppedImage='';
+
+         var handleFileSelect=function(evt) {
+          var file=evt.currentTarget.files[0];
+          var reader = new FileReader();
+          reader.onload = function (evt) {
+            $scope.$apply(function($scope){
+              $scope.myImage=evt.target.result;
+            });
+          };
+          reader.readAsDataURL(file);
+          console.log(file);
+        };
+        angular.element(document.querySelector('#fileInput')).on('change',handleFileSelect); 
+
 		
 });

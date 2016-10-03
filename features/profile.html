@@ -229,15 +229,39 @@
 	</div>
 	<div class="data-info-cards actual-card" ng-show="isSet(4)">
 		<div class="heading">
-			<h3><i class="fa fa-caret-left" ng-click="setTab(3)" aria-hidden="true"></i> Questions !!!
+			<h3><i class="fa fa-caret-left" ng-click="setTab(3)" aria-hidden="true"></i> Give us few more details about your work !!!
 			<i class="fa fa-caret-right" ng-click="setTab(5)" aria-hidden="true"></i>
 		</div>
 		<div class="progress-line">
 				<div class="col-md-9">
 				</div>
 		</div>
-		<div >
-		To be done!!
+		<div class="col-md-12">
+			<div class="col-md-8 col-md-offset-2">
+					<div class="form-group">
+						<label for="cportal-custom-questions-1">No of short films directed?</label>
+						<input type="number" name="cportal-custom-questions-1" id="cportal-custom-questions-1" class="form-control" size="3">	
+					</div>
+					<div class="form-group">
+						<label for="cportal-custom-question-2">No of featured films directed?</label>
+						<input type="number" name="cportal-custom-questions-2" id="cportal-custom-questions-2" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="cportal-custom-question-3">No of theatre films directed?</label>
+						<input type="number" name="cportal-custom-questions-3" id="cportal-custom-questions-3" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="cportal-custom-question-4">No of ads directed?</label>
+						<input type="number" name="cportal-custom-questions-4" id="cportal-custom-questions-4" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="cportal-custom-question-5">No of TV shows?</label>
+						<input type="number" name="cportal-custom-questions-5" id="cportal-custom-questions-5" class="form-control">
+					</div>
+					<div class="form-group">
+							<a ng-click="setTab(5)" class="nav-btn nav-btn-next">NEXT</a>	
+					</div>
+			</div>
 
 		</div>
 		
@@ -320,7 +344,7 @@
 										<vcarousel links="links"></vcarousel>				
 					</div>
 					 <div class="col-md-12 media-display-carousel-wrapper" id="cportal-media-videos-carousal-display">
-										<acarousel links="links"></acarousel>				
+										<!-- <acarousel links="links"></acarousel>				 -->
 					</div>
 
 		
@@ -329,4 +353,42 @@
 		</div>
 
 	</div>
+
+	<div class="data-info-cards actual-card" ng-show="isSet(6)">
+			<div class="heading">
+					<h3><i class="fa fa-caret-left" ng-click="setTab(5)" aria-hidden="true"></i> Upload your profile image
+					<i class="fa fa-caret-right" ng-click="setTab(7)" aria-hidden="true"></i>
+			</div>
+			<div class="progress-line">
+				<div class="col-md-9"></div>
+			</div>
+			<div class="col-md-8 col-md-offset-2 cportal-profile-image-crop-wrapper">
+				<div class="form-group">
+					<label for="cportal-profile-image-crop">Upload your image from your computer</label>
+					<input type="file" name="cportal-profile-image-crop" id="fileInput" class="form-control">	
+				</div>
+				<div class="form-group">
+					<div class="col-md-12 cportal-profile-image-raw-preview-wrapper">
+						<div class="col-md-10 col-md-offset-2 cportal-profile-image-raw-preview">
+							<h3>Image Preview</h3>
+							<div class="cportal-profile-image-crop-area">
+   								 <img-crop image="myImage" result-image="myCroppedImage"></img-crop>
+ 							 </div>
+						</div>
+						<!-- <div class="cportal-profile-image-cropped-wrapper">
+								<img ng-src="{{myCroppedImage}}" />	
+						</div> -->
+
+					</div>	
+				</div>
+				<div class="form-group">
+					 <a class="nav-btn nav-btn-next" id="cportal-profile-image-crop-next">SUBMIT</a>
+				</div>
+
+
+
+			</div>
+	</div>
+
+
 </section>
